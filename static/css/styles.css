@@ -1,0 +1,84 @@
+#landingpage {
+    background: url("../img/backgrounds/h_img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+div img#glogo {
+    max-width: 96px;
+    align-self: center;
+}
+div img#scrolldown {
+    width: 23px;
+    align-self: center;
+    position: absolute;
+    bottom: 20px;
+}
+#textcont {
+    padding: 27px;
+}
+#services {
+    background: url("../img/backgrounds/s_image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 40px;
+}
+#whatwedorow {
+    padding: 20px;
+}
+#whatwedorow img{
+    min-height: 91px;
+}
+
+#porfolio div {
+    padding: 10px;
+    transition: all .2s;
+}
+#porfolio #pt:hover {
+    /*box-shadow: 2px 2px 1px #000;*/
+    border-radius: 2px;
+    transition:  all .4s;
+    margin-top: -1%;
+}
+
+#porfolio img {
+    display: flex;
+    width: 100%;
+}
+.img-desc {
+    position: absolute;
+    top:0;left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-wrap: break-word;
+    display: none;
+}
+.img-desc p {
+    font-size: x-large;
+    text-transform: uppercase;
+    border: 2px solid white;
+    background: rgba(0, 0, 0, 0.459);
+    width: 80%;
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+
+}
+#contactuscont {
+    background:  url("../img/backgrounds/c_image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+#contactuscont input, #contactuscont textarea {
+    background: transparent;
+
+}
+#footericons img {
+    margin: 4px;
+}
