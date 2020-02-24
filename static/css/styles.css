@@ -1,3 +1,6 @@
+body {
+    cursor: default;
+}
 #landingpage {
     background: url("../img/backgrounds/h_img.jpg");
     background-repeat: no-repeat;
@@ -33,12 +36,6 @@ div img#scrolldown {
 #porfolio div {
     padding: 10px;
     transition: all .2s;
-}
-#porfolio #pt:hover {
-    /*box-shadow: 2px 2px 1px #000;*/
-    border-radius: 2px;
-    transition:  all .4s;
-    margin-top: -1%;
 }
 
 #porfolio img {
@@ -77,8 +74,13 @@ div img#scrolldown {
 }
 #contactuscont input, #contactuscont textarea {
     background: transparent;
+    color: #fff;
 
 }
 #footericons img {
     margin: 4px;
+}
+
+.hidden-desc.toggle {
+    display:none;
 }

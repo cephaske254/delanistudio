@@ -9,7 +9,7 @@
     <script src="static/js/jquery-3.4.1.js"></script>
     <title>Home | Delani Studio</title>
 </head>
-<body class="">
+<body>
     <div class="container-fluid text-white" id="landingpage">
         <div class="text-center row justify-content-center align-content-center flex-column min-vh-100">
             <img src="static/img/logo/logo.png" alt="Delani Logo" id="glogo">
@@ -34,17 +34,41 @@
     <div class="container-fluid text-center">
         <h1>WHAT WE DO</h1>
         <div class="row" id="whatwedorow">
+            <div class="col-sm toggle">
+                <div class="visible-desc toggle">
+                    <img src="static/img/services_icons/design_icon.png" alt="">
+                    <p class="h6">DESIGN</p>
+                </div>
+                <div class="hidden-desc text-center toggle">
+                    <p class="h6">DESIGN</p>
+                    <p>Our design practice offers a full range of services including bransd strategy, interation and visual design and user expierience testing</p>
+                    <p>Throughout your project, our designers create and implement visual design and workflows, solicit user feedback and work with you to make sure what gets built is what is needed.</p>
+                </div>
+            </div>
+
+
+
             <div class="col-sm">
-                <img src="static/img/services_icons/design_icon.png" alt="">
-                <p class="h6">DESIGN</p>
+                <div class="visible-desc toggle">
+                    <img src="static/img/services_icons/dev_icon.png" alt="">
+                    <p class="h6">DEVELOPMENT</p>
+                </div>
+                <div class="hidden-desc text-center toggle">
+                    <p class="h6">DEVELOPMENT</p>
+                    <p>All engineers are fluent in the latest enterprise, mobile and web development technologies.</p> 
+                    <p>They collaborate with your team to write, and improve code on daily basis, using proven technologies such as test-driven development and pair programming.</p>
+                </div>
             </div>
             <div class="col-sm">
-                <img src="static/img/services_icons/dev_icon.png" alt="">
-                <p class="h6">DEVELOPMENT</p>
-            </div>
-            <div class="col-sm">
-                <img src="static/img/services_icons/product_icon.png" alt="">
-                <p class="h6">PRODUCT MANAGEMENT</p>
+                <div class="visible-desc toggle">
+                    <img src="static/img/services_icons/product_icon.png" alt="">
+                    <p class="h6">PRODUCT MANAGEMENT</p>
+                </div>
+                <div class="hidden-desc toggle text-center">
+                    <p class="h6">PRODUCT MANAGEMENT</p>
+                    <p>Planning development is iteractive. Because we are constantly coding and testing, the products we build are always ready to go live</p>
+                    <p>This iterative process allows for changes as business requirements evolve.</p>
+                </div>
             </div>
         </div>
         <div class="container text-center">
@@ -52,38 +76,38 @@
             <div class="row no-gutters text-white" id="porfolio">
                 <div class="col-md-3 col-sm-6" id="pt">
                     <img src="static/img/portfolio/work4.jpg" alt="">
-                    <div class="img-desc"><p>IMAGE DESCRIPTION</p></div>
+                    <div class="img-desc"><p>DELANI STUDIO</p></div>
                 </div>
                 <div class="col-md-3 col-sm-6" id="pt">
                     <img src="static/img/portfolio/work3.jpg" alt="">
-                    <div class="img-desc"><p>IMAGE DESCRIPTION</p></div>
+                    <div class="img-desc"><p>DELANI STUDIO</p></div>
                 </div>
                 <div class="col-md-3 col-sm-6" id="pt">
                     <img src="static/img/portfolio/work2.jpg" alt="">
-                    <div class="img-desc"><p>IMAGE DESCRIPTION</p></div>
+                    <div class="img-desc"><p>DELANI STUDIO</p></div>
                 </div>
                 <div class="col-md-3 col-sm-6" id="pt">
                     <img src="static/img/portfolio/work1.jpg" alt="">
-                    <div class="img-desc"><p>IMAGE DESCRIPTION</p></div>
+                    <div class="img-desc"><p>DELANI STUDIO</p></div>
                 </div>
 
                 <div class="col-md-3 col-sm-6" id="pt">
                     <img src="static/img/portfolio/work5.jpg" alt="">
-                    <div class="img-desc"><p>IMAGE DESCRIPTION</p></div>
+                    <div class="img-desc"><p>DELANI STUDIO</p></div>
                 </div>
 
                 <div class="col-md-3 col-sm-6" id="pt">
                     <img src="static/img/portfolio/work6.jpg" alt="">
-                    <div class="img-desc"><p>IMAGE DESCRIPTION</p></div>
+                    <div class="img-desc"><p>DELANI STUDIO</p></div>
                 </div>
                 
                 <div class="col-md-3 col-sm-6" id="pt">
                     <img src="static/img/portfolio/work7.jpg" alt="">
-                    <div class="img-desc"><p>IMAGE DESCRIPTION</p></div>
+                    <div class="img-desc"><p>DELANI STUDIO</p></div>
                 </div>
                 <div class="col-md-3 col-sm-6" id="pt">
                     <img src="static/img/portfolio/work8.jpg" alt="">
-                    <div class="img-desc"><p>IMAGE DESCRIPTION</p></div>
+                    <div class="img-desc"><p>DELANI STUDIO</p></div>
                 </div>
             </div>
         </div>
@@ -91,16 +115,16 @@
 
 <div class="container-fluid text-center text-white" id="contactuscont">
     <h1>CONTACT US</h1>
-    <form action="#" class="form-horizontal container align-content-center">
+    <form action="#" class="form-horizontal container align-content-center" onsubmit="return false">
         <div class="form-group row flex-row justify-content-center">
-            <input type="text" class="form-control col-sm-5 m-1" placeholder="Name...">
-            <input type="email" class="form-control col-sm-5 m-1" placeholder="Email...">
+            <input type="text" name="name" class="form-control col-sm-5 m-1" placeholder="Name...">
+            <input type="email" name="email" class="form-control col-sm-5 m-1" placeholder="Email...">
         </div>
             <div class="form-group row justify-content-center">
-                <textarea name="" class="form-control col-sm-10"placeholder="Your Message Here..."></textarea>
+                <textarea name="message" class="form-control col-sm-10"placeholder="Your Message Here..." rows="6"></textarea>
             </div>
             <div class="form-group">
-                <button type="submit" class="btn btn-primary align-self">Send</button>
+                <button type="submit" name="submit" class="btn btn-primary align-self">Send</button>
             </div>
     </form>
 </div>
@@ -121,6 +145,8 @@
     </div>
     <p class="text-center">DELANI STUDIO <br>&copy; 2019</p>
 </div>
+
+
 <script src="static/js/script.js"></script>
 </body>
 </html>
