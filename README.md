@@ -12,7 +12,7 @@ We unifies design, development and product management to create exceptional prod
 * git clone
 * cd delanistudio
 
-* code . or atom . depending on the text editor of your choise.
+* code . or atom . depending on the text editor of your choice.
 
 ## Technologies Used
 
@@ -24,8 +24,8 @@ We unifies design, development and product management to create exceptional prod
 ## BDD
 | Behaviour      | Input        |
 | :------------- | :----------: |
-|  Enter your name  |   Cephas K. Too |     |
-| Enter your Email Address  |  cephaske254@gmail.com|   |
+|  Name  |   Cephas K. Too |     |
+| Email Address  |  cephaske254@gmail.com|   |
 
 ## License
 * *MIT License:*
